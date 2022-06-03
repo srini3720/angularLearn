@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './ui/navbar/navbar.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { MovieCardComponent } from './ui/movie-card/movie-card.component';
+import { DependencyComponent } from './dependency/dependency.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { MovieCardComponent } from './ui/movie-card/movie-card.component';
     NavbarComponent,
     FooterComponent,
     MovieCardComponent,
+    DependencyComponent,
     
   ],
   imports: [
@@ -21,7 +23,9 @@ import { MovieCardComponent } from './ui/movie-card/movie-card.component';
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [
+    // DependencyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
